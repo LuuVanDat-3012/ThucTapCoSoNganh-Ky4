@@ -1,0 +1,160 @@
+.divImage {
+    float: left;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    margin-left: -35px;
+
+}
+.displayimage{
+    margin-left: -40px;
+}
+
+.d2 {
+    float: left;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+
+}
+.image1div, .image2div, .image3div, .image4div{
+    height: 90px;
+    width: 80px;
+
+    margin: 5px;
+    float: left;
+    align-content: center;
+
+    border-radius: 2px;
+
+}
+.image1div button{
+    background-color: white;
+    border: none;
+}
+.image2div button{
+    background-color: white;
+    border: none;
+}
+.image3div button{
+    background-color: white;
+    border: none;
+}
+.image4div button{
+    background-color: white;
+    border: none;
+}
+#image1, #image2, #image3, #image4{
+    height: 90px;
+    width: 80px;
+    margin-left: -5px;
+}
+.image4 :hover{
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
+}
+
+.d3 {
+    background-color: white;
+    height: 100px;
+    margin-top: 10px;
+
+    margin-top: 10px;
+
+}
+
+.s1 {
+    background-color: white;
+    height: 500px;
+
+}
+.content{
+    background-color: white;
+    margin-top: 90px;
+
+}
+.phoneName{
+    margin-top: -10px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.displayimage:hover {
+    -ms-transform: scale(1.016); /* IE 9 */
+    -webkit-transform: scale(1.017); /* Safari 3-8 */
+    transform: scale(1.018);
+}
+.infoPhone{
+    height: 50px;
+    width: 400px;
+}
+.linePrice{
+    color: #cb1c22;
+    font-size: 25px;
+
+}
+/*{*/
+/*    style: 'currency',*/
+/*    currency: [giá trị ISO 4217] // tham số bắt buộc, ko truyền lỗi*/
+/*}*/
+#listinfo{
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+}
+.bi{
+
+}
+.configList{
+    margin-top: 10px;
+}
+.buynow{
+    width: 380px;
+    height: 70px;
+    text-align: center;
+    border: none;
+    border-radius: 3px 3px 3px;
+}
+#cart{
+    margin-top: -8px;
+}
+.insert-into-cart{
+    width: 380px;
+    height: 70px;
+    text-align: center;
+    border-color: #cb1c22 ;
+    background-color:  rgba(208,1,27,.08);
+    color: #d0011b;
+    border-radius: 3px 3px 3px;
+}
+.products {
+    list-style-type: none;
+    width: 100%;
+}
+
+.products li {
+    display: block;
+    float: left;
+    width: 250px; /* bề rộng bao nhiêu tùy bạn */
+    text-align: center; /* để hình ảnh, tên và giá sản phẩm nằm vô giữa */
+    height: 360px;
+    text-decoration: none;
+}
+.dsccamera, .dscmonitor, .dscprocessor{
+    margin-left: 25px;
+}
+.samebrand:hover{
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.02);
+    border: 1px #d2d2d2 solid;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.bi-star-fill, .bi-star-half{
+    color: #ee4d2d;
+}

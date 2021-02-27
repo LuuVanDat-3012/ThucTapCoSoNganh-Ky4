@@ -1,0 +1,35 @@
+.products {
+    list-style-type: none;
+    width: 100%;
+}
+.samebrand:hover{
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.02);
+    border: 1px #d2d2d2 solid;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+
+.products li {
+    display: block;
+    float: left;
+    width: 250px; /* bề rộng bao nhiêu tùy bạn */
+    text-align: center; /* để hình ảnh, tên và giá sản phẩm nằm vô giữa */
+    height: 360px;
+    text-decoration: none;
+}
+.bi-star-fill{
+     color: #ffa500;;
+}
+.listphoneSearch{
+    margin: 0 auto;
+    background-color: #ba0000;
+    width: 1100px;
+}
+.searchTitle{
+    width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+}
