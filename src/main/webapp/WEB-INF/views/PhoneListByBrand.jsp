@@ -7,7 +7,7 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<c:url value="/css/SearchPhone.css"/> "/>
+    <link rel="stylesheet" href="<c:url value="/css/PhoneListByBrand.css"/> "/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
@@ -39,6 +39,24 @@
                 </a>
             </li>
         </c:forEach>
+    </ul>
+</div>
+<div class="totalPages">
+
+    <ul>
+        <c:forEach begin="0" end="${requestScope.totalPage-1}" var="i">
+           <li>
+               <a href="/danh-muc-san-pham?brandId=${requestScope.brandId}&page=${i}">
+                   <button><p style="font-style: inherit">${i+1}</p></button>
+
+               </a>
+           </li>
+
+        </c:forEach>
+<%--        <li><</li>--%>
+<%--        <li><a href="news.asp">News</a></li>--%>
+<%--        <li><a href="contact.asp">Contact</a></li>--%>
+<%--        <li><a href="about.asp">About</a></li>--%>
     </ul>
 </div>
 </body>

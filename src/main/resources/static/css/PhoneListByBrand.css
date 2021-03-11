@@ -10,6 +10,10 @@
     border-radius: 2px;
     text-decoration: none;
 }
+.samebrand{
+    background-color: white;
+    margin: 2px;
+}
 
 
 .products li {
@@ -25,11 +29,24 @@
 }
 .listphoneSearch{
     margin: 0 auto;
-    background-color: #ba0000;
+    /*background-color: #ba0000;*/
     width: 1100px;
 }
 .searchTitle{
-    width: 1100px;
+    width: 1200px;
     margin: 0 auto;
     background-color: white;
+}
+.totalPages{
+  margin: 0 auto;
+    width: 600px;
+    float: bottom;
+    bottom: 0;
+}
+.totalPages ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.bi-star-fill{
+    margin-top: -4px;
 }

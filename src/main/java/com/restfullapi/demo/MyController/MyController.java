@@ -135,18 +135,26 @@ public class MyController {
     }
 
     //  TÌM KIẾM =======================
-    @GetMapping("/search-phone")
+    @GetMapping("/danh-muc-san-pham")
     public String getListPhoneSearch(HttpServletRequest request, @RequestParam(name = "brandId", required = false, defaultValue = "") String brandId,
-                                     @RequestParam(name = "page", required = false, defaultValue = "0") int pageNum ,
-                                     @RequestParam(name = "keyword", required = false, defaultValue = "") String keyword) {
+                                     @RequestParam(name = "page", required = false, defaultValue = "0") int pageNum) {
         Pageable pageable = PageRequest.of(pageNum, 12);
-        Page<Phone> phonePage = phonePaging.getPhoneByBrandId(brandId,keyword, pageable);
+        Page<Phone> phonePage = phonePaging.getPhoneByBrandId(brandId, pageable);
         List<Phone> phoneList = phonePage.getContent();
-        request.setAttribute("phoneWasSearched", phoneList);
-        request.setAttribute("index", phonePage.getTotalPages());
-        request.setAttribute("messageSearch", "Không tìm thấy sản phẩm phù hợp !!!");
-        return "SearchPhone";
+        if(phoneList == null)
+            request.setAttribute("messageSearch", "Không tìm thấy sản phẩm phù hợp !!!");
+        else {
+            request.setAttribute("brandId", brandId);
+            request.setAttribute("phoneWasSearched", phoneList);
+            request.setAttribute("totalPage", phonePage.getTotalPages());
+        }
+
+
+
+        return "PhoneListByBrand";
     }
+//    @GetMapping("/danh-muc-san-pham")
+//    public String showPhoneByBrand()
 
     @GetMapping("/sort-high-to-low")
     public String showPhonePriceHighToLow(HttpServletRequest request) {

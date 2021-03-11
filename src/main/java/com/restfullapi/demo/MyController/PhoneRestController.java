@@ -29,6 +29,7 @@ public class PhoneRestController {
 
     //===================
     //InfoPhone
+    @CrossOrigin(origins = "http://localhost:8081")
     @GetMapping("/phones")
     public List<PhoneDto> getListPhone(@RequestParam(name = "keyword", required = false, defaultValue = "") String keyword
             ) {
@@ -74,9 +75,9 @@ public class PhoneRestController {
     public ResponseEntity<?> deletePhone() {
         return null;
     }
-    @GetMapping("/test-api")
-    public ResponseEntity<Page<Phone>> show(HttpServletRequest request){
-        Pageable pageable = PageRequest.of(0,8);
-        return ResponseEntity.status(HttpStatus.OK).body(phonePaging.getPhoneByBrandId("","i" ,pageable));
-    }
+//    @GetMapping("/test-api")
+//    public ResponseEntity<Page<Phone>> show(HttpServletRequest request){
+//        Pageable pageable = PageRequest.of(0,8);
+//        return ResponseEntity.status(HttpStatus.OK).body(phonePaging.getPhoneByBrandId("","i" ,pageable));
+//    }
 }

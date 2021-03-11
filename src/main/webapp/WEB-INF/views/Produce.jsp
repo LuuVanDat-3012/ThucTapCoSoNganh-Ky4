@@ -142,16 +142,28 @@
 
     <div class="listBtn">
         <div> <button><img src="<c:url value="/images/logoAP.png"></c:url> " height="30px" width="30px" style="margin-top: -10px">
-            <a href="/search-phone?brandId=IOS&page=0">APPLE</a> </button></div>
+            <a href="/danh-muc-san-pham?brandId=IOS&page=0">APPLE</a> </button></div>
         <div>
             <button>
-                <a href="/search-phone?brandId=SS&page=0">
+                <a href="/danh-muc-san-pham?brandId=SS&page=0">
                      <img src="<c:url value="/images/logoSS.png"></c:url> "  height="45px" width="110px">
                 </a>
             </button>
         </div>
-        <div> <button><img src="<c:url value="/images/Oppo_logo.png"></c:url> "  height="45px" width="110px"></button></div>
-        <div> <button>Xiaomi<img src="<c:url value="/images/RM.png"></c:url> " height="30px" width="30px"></button></div>
+        <div>
+            <button>
+                <a href="/danh-muc-san-pham?brandId=OP&page=0">
+                    <img src="<c:url value="/images/Oppo_logo.png"></c:url> "  height="45px" width="110px">
+                </a>
+            </button>
+        </div>
+        <div>
+            <button>
+                <a href="/danh-muc-san-pham?brandId=RM&page=0" class="btnXiaome">
+                    <img src="<c:url value="/images/RM.png"></c:url> "  height="45px" width="110px">
+                </a>
+            </button>
+        </div>
 
     </div>
 

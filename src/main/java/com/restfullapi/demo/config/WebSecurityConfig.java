@@ -63,6 +63,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         AuthenticationSuccessHandler successHandler = new AuthenticationSuccessWithSessionHandler();
         AuthenticationFailureHandler auFail = new AuthenticationFailed();
         httpSecurity.csrf().disable();
+        httpSecurity.cors().disable();
 
         httpSecurity.authorizeRequests().antMatchers("/css/**", "/JavaScript/**", "/images/**").permitAll();
         httpSecurity.authorizeRequests().antMatchers(HttpMethod.GET, "/user").access("hasAnyRole('ROLE_ADMIN')");

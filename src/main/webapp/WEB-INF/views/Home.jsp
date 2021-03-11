@@ -142,16 +142,17 @@
         </div>
     </div>
 
-    <div align="center" >
-        <article style="background-color: #ba0000" >
-            <jsp:include page="${param.view}"/>
-        </article>
-    </div>
+     <div align="center">
+         <article style="background-color: #d2d2d2" >
+             <jsp:include page="${param.view}"/>
+         </article>
+     </div>
+
+
 
     <%--    <aside>CONTROL PANEL</aside>--%>
-<hr>
-    <footer>
 
+    <footer>
 
         <div class="containerFooter">
             <div class="contentFooter">
@@ -173,29 +174,24 @@
                         </svg>Gọi khiếu nại : <strong>0395837186</strong> (8h00 - 22h00)
                     </div>
                 </div>
-                <div class="item"></div>
+                <div class="item">
+                    <div id ="div-link">
+                        <div><strong>Facebook : </strong><a href="https://www.facebook.com/people/L%C3%B2-V%C4%83n-M%E1%BA%B9t/100015237827823">Lưu Văn Đạt</a> </div>
+                        <div><strong>Zalo : </strong><a href="https://www.facebook.com/people/L%C3%B2-V%C4%83n-M%E1%BA%B9t/100015237827823">Lưu Văn Đạt</a> </div>
+                    </div>
+                </div>
                 <div class="item"></div>
             </div>
             <div class="footer">
-
+                <div id ="listProduct-in-footer">
+                    <c:forEach items="${sessionScope.stringPNameList}" var="i">
+                        <a href="/info-phone/${i}">${i}</a> /
+                    </c:forEach>
+                </div>
             </div>
         </div>
 
 
-
-
-
-
-<%--        --%>
-<%--        <div id ="div-link">--%>
-<%--             <div><strong>Facebook : </strong><a href="https://www.facebook.com/people/L%C3%B2-V%C4%83n-M%E1%BA%B9t/100015237827823">Lưu Văn Đạt</a> </div>--%>
-<%--             <div><strong>Zalo : </strong><a href="https://www.facebook.com/people/L%C3%B2-V%C4%83n-M%E1%BA%B9t/100015237827823">Lưu Văn Đạt</a> </div>--%>
-<%--        </div>--%>
-<%--        <div id ="listProduct-in-footer">--%>
-<%--             <c:forEach items="${sessionScope.stringPNameList}" var="i">--%>
-<%--                  <a href="/info-phone/${i}">${i}</a> /--%>
-<%--             </c:forEach>--%>
-<%--        </div>--%>
     </footer>
 </body>
 </html>
